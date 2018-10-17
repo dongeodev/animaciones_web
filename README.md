@@ -87,10 +87,22 @@ Apuntes del curso de animaciones para la web de Platzi
 
 <br><code> animation-name: [nombre];</code> / Se coloca un nombre al elemento que se quiere animar</br>
 <br><code> animation-delay: 1000ms;</code> / tiempo que tarda en ejecutarse la animacion desde que carga o es acitvada</br>
-<br><code> animation-duration: ;</code>/ tiempo que dura 1 ciclo de la animacion</br>
+<br><code> animation-duration: 1s ;</code>/ tiempo que dura 1 ciclo de la animacion</br>
 <br><code> animation-direction: [reverse,alternate];</code> / en que sentido se ejecuta la animacion.</br>
 <br><code> animation-iteration-count: [#, infinite];</code> / define cuantas veces se repite el ciclo de animacion</br>
-<br><code> animation-timming-funtion: [ease, ease-in, ease-out, ease-in-out] ;</code> / define si la animacion entra o sale suavizada</br>
+<br><code> animation-timming-funtion: [ease, ease-in, ease-out, ease-in-out, linear, steps(#), cubic-bezeir(1,1,1,1)] ;</code> / define si la animacion entra o sale suavizada (aceleracion)</br>
+<br>ease: por defecto</br>
+<br>ease-in: se suaviza al entrar o al inicio</br>
+<br>ease-out: se suaviza al salir o al finalizar</br>
+<br>ease-in-out: se suaviza al entrar y salir, básicamente se acelera solo la mitad de la animación</br>
+
 <br><code> animation-play-state: [running, paused];</code> / permite pausar o iniciar una animacion</br>
 <br><code> animation-fill-mode: [forward];</code> / fija en que estado quedara la animacion despues de ocurrir</br>
 
+
+## Aceleración y curva de bezier
+###### clase 12
+
+
+cubic-bezier.com /para personalizar la curva
+<br><code> animation-timming-funtion: cubic-bezeir(1,1,1,1);</code> / Se puede jugar con los valores para generar efectos como el rebote (aceleracion)</br>
