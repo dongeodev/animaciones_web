@@ -1,7 +1,7 @@
 # Animaciones web
 Apuntes del curso de animaciones para la web de Platzi
 
-# Sintaxis de transiciones
+## Sintaxis de transiciones
 ###### clase 3
 
 
