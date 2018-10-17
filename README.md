@@ -77,7 +77,20 @@ Apuntes del curso de animaciones para la web de Platzi
 <br><code> transform: skew (x , y);</code></br> / skew(deg)
 
 ## Punto de transformación
-###### clase 8
+###### clase 10
 
 <br><code>transform-origin: x , y ; </code> / cambia el punto de referencia para la animacion</br>
 <br><code> transform-origin right, top;</code></br>
+
+## Sintaxis (animation)
+###### clase 11
+
+<br><code> animation-name: [nombre];</code> / Se coloca un nombre al elemento que se quiere animar</br>
+<br><code> animation-delay: 1000ms;</code> / tiempo que tarda en ejecutarse la animacion desde que carga o es acitvada</br>
+<br><code> animation-duration: ;</code>/ tiempo que dura 1 ciclo de la animacion</br>
+<br><code> animation-direction: [reverse,alternate];</code> / en que sentido se ejecuta la animacion.</br>
+<br><code> animation-iteration-count: [#, infinite];</code> / define cuantas veces se repite el ciclo de animacion</br>
+<br><code> animation-timming-funtion: [ease, ease-in, ease-out, ease-in-out] ;</code> / define si la animacion entra o sale suavizada</br>
+<br><code> animation-play-state: [running, paused];</code> / permite pausar o iniciar una animacion</br>
+<br><code> animation-fill-mode: [forward];</code> / fija en que estado quedara la animacion despues de ocurrir</br>
+
