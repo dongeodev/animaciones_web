@@ -23,12 +23,49 @@ Apuntes del curso de animaciones para la web de Platzi
 ###### clase 5
 
 
- <code> transform: rotate(deg) skew(deg) traslate(px) scale(0-1)</code> 
+ <code> transform: rotate(deg) skew(deg) traslate(px) scale(0-1);</code> 
  rotate: rotar elemento    
  sesgar: inclina el elemento
  posicion: mueve el elemento
  escala: cambia el tamano (%)
  
  
- ## Sintaxis de Transformaciones
-###### clase 5
+ ## Transformaciones de rotación
+###### clase 6
+
+
+<code>transform: rotateX(45deg);</code> / Rotación en el eje X 
+
+<code>transform: rotateY(45deg);</code> / Rotación en el eje Y
+
+<code>transform: rotate(-45deg);</code> / Rotación a lado contrario de las manecillas del reloj 
+
+<code>transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);</code> / Animación de transformaciones 
+
+<code>transform: rotate3d(x,y,z,rotate); </code> / Rotación en 3D, se coloca 1 en los grados que se desea girar 
+
+<code>transform: rotate3d(1,0,0,45deg);</code>   / Rotación en el eje X 
+
+<code>transform: rotate3d(0,1,0,45deg);</code> / Rotación en el eje Y
+
+
+ ## Transformaciones de traslación y perspectiva
+###### clase 6
+
+<code> perspective: 200px;</code> 
+<code> perspective-origin: X Y;</code>
+<code> perspective-origin: top right;</code> / mueve el punto de referencia para la perspectiva
+
+<code> transform: traslate (xy);</code>
+<code> transform: traslate (x , y);</code>
+<code> transform: traslateX (px);</code>
+<code> transform: traslateY (px);</code>
+<code> transform: traslateZ (px);</code>
+<code> transform: traslate3d (x , y , z);</code>
+
+## Transformaciones de escala
+###### clase 7
+
+<code> transform: scale (xy);</code>
+<code> transform: scale (x , y);</code>
+
