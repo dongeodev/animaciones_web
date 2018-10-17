@@ -56,16 +56,28 @@ Apuntes del curso de animaciones para la web de Platzi
 <code> perspective-origin: X Y;</code>
 <code> perspective-origin: top right;</code> / mueve el punto de referencia para la perspectiva
 
-<code> transform: traslate (xy);</code>
-<code> transform: traslate (x , y);</code>
-<code> transform: traslateX (px);</code>
-<code> transform: traslateY (px);</code>
-<code> transform: traslateZ (px);</code>
-<code> transform: traslate3d (x , y , z);</code>
+<br><code> transform: traslate (x);</code></br>
+<br><code> transform: traslate (x , y);</code></br>
+<br><code> transform: traslateX (px);</code></br>
+<br><code> transform: traslateY (px);</code></br>
+<br><code> transform: traslateZ (px);</code></br>
+<br><code> transform: traslate3d (x , y , z);</code></br>
 
 ## Transformaciones de escala
 ###### clase 7
 
-<code> transform: scale (xy);</code>
-<code> transform: scale (x , y);</code>
+<br><code> transform: scale (xy);</code></br>
+<br><code> transform: scale (x , y);</code></br>
 
+
+## Transformaciones de sesgados
+###### clase 8
+
+<br><code> transform: skew (x);</code></br>
+<br><code> transform: skew (x , y);</code></br> / skew(deg)
+
+## Punto de transformación
+###### clase 8
+
+<br><code>transform-origin: x , y ; </code> / cambia el punto de referencia para la animacion</br>
+<br><code> transform-origin right, top;</code></br>
