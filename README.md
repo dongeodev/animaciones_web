@@ -106,3 +106,11 @@ Apuntes del curso de animaciones para la web de Platzi
 
 cubic-bezier.com /para personalizar la curva
 <br><code> animation-timming-funtion: cubic-bezeir(1,1,1,1);</code> / Se puede jugar con los valores para generar efectos como el rebote (aceleracion)</br>
+
+## Multiples Animaciones
+###### clase 13
+
+<br><code> animation-name: [nombre1], [nombre2];</code> / Se coloca un nombre al elemento que se quiere animar</br>
+
+Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar 
+
