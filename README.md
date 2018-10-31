@@ -119,16 +119,16 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 
 <code>
 <script>
-    const $cuadrado = document.getElementById('cuadrado');
-    // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra')
-    // $cuadrado.addEventListener('animationstart', (event) => {
-    // $cuadrado.addEventListener('animationiteration', (event) => {
-    $cuadrado.addEventListener('animationend', (event) => {
-      // console.log(event.animationName);
-      if (event.animationName === 'rebote') {
-        $cuadrado.style.animationName = 'cuadrado escalera';
-        $cuadrado.style.animationDuration = '3s';
-      }
-    });
+   <br> const $cuadrado = document.getElementById('cuadrado'); </br>
+   <br> // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra') </br>
+   <br> // $cuadrado.addEventListener('animationstart', (event) => { </br>
+   <br> // $cuadrado.addEventListener('animationiteration', (event) => { </br>
+   <br> $cuadrado.addEventListener('animationend', (event) => { </br>
+    <br>  // console.log(event.animationName); </br>
+   <br>   if (event.animationName === 'rebote') { <b/r> 
+    <br>    $cuadrado.style.animationName = 'cuadrado escalera'; </br>
+    <br>    $cuadrado.style.animationDuration = '3s';</br> 
+    <br>  }</br>
+   <br> }); </br>
   </script>
 </code>
