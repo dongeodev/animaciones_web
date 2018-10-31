@@ -149,27 +149,27 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 
 Es el api de JS para escribir las animaciones en JS
 
- <script>
-    const $pelota = document.getElementById('pelota');
+<br> <code> <script> </code></br>
+ <br> <code>   const $pelota = document.getElementById('pelota');</code></br>
 
-    // element.animate(keyframes = [], option = {})
-    const animation = $pelota.animate([
-      // from
-      {
-        transform: 'translateX(0)'
-      },
-      // to
-      {
-        transform: 'translateX(500px)' // 250
-      }
-    ],{
-      duration: 1000,
-      delay: 1000,
-      direction: 'normal',
-      easing: 'linear',
-      iterations: Infinity,
-      fill: 'forwards',
-      iterationStart: .5, // = 50%
-      // endDelay: 5000,
-    })
-  </script>
+ <br> <code>   // element.animate(keyframes = [], option = {})</code></br>
+ <br> <code>   const animation = $pelota.animate([</code></br>
+  <br> <code>    // from</code></br>
+  <br> <code>    {</code></br>
+  <br> <code>      transform: 'translateX(0)'</code></br>
+  <br> <code>    },</code></br>
+ <br> <code>     // to</code></br>
+ <br> <code>     {</code></br>
+  <br> <code>      transform: 'translateX(500px)' // 250</code></br>
+   <br> <code>   }</code></br>
+   <br> <code> ],{</code></br>
+   <br> <code>   duration: 1000,</code></br>
+   <br> <code>   delay: 1000,</code></br>
+   <br> <code>   direction: 'normal',</code></br>
+    <br> <code>  easing: 'linear',</code></br>
+    <br> <code>  iterations: Infinity,</code></br>
+    <br> <code>  fill: 'forwards',</code></br>
+    <br> <code>  iterationStart: .5, // = 50%</code></br>
+   <br> <code>   // endDelay: 5000,</code></br>
+   <br> <code> })</code></br>
+  <br> <code></script></code></br>
