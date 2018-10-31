@@ -178,7 +178,7 @@ Es el api de JS para escribir las animaciones en JS
 ## Controlar animaciones
 ###### clase 18
 
-   <br> <code><br> <code> const $playButton = document.getElementById('play');</code></br>
+   <br> <code> const $playButton = document.getElementById('play');</code></br>
    <br> <code> const $pauseButton = document.getElementById('pause');</code></br>
    <br> <code> const $stopButton = document.getElementById('stop');</code></br>
    <br> <code> const $reverseButton = document.getElementById('reverse');</code></br>
