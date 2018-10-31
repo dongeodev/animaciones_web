@@ -118,7 +118,7 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 ###### clase 14
 
 <code>
-<script>
+<br><script></br>
    <br> const $cuadrado = document.getElementById('cuadrado'); </br>
    <br> // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra') </br>
    <br> // $cuadrado.addEventListener('animationstart', (event) => { </br>
@@ -130,5 +130,5 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
     <br>    $cuadrado.style.animationDuration = '3s';</br> 
     <br>  }</br>
    <br> }); </br>
-  </script>
+ <br> </script></br>
 </code>
