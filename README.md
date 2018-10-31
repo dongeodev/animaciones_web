@@ -136,3 +136,9 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 
  <br> <code>will-change: opacity, transform;</code></br>
  will-change se usa para avisar al navegador que una propiedad va a cambiar. las transformaciones y la opacidad estan optimizadas en los navegadores por eso conviene usa will-change
+ 
+ 
+## Propiedades animables
+###### clase 16
+ 
+ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
