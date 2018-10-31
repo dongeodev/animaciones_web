@@ -114,3 +114,20 @@ cubic-bezier.com /para personalizar la curva
 
 Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar 
 
+## Detectar eventos de animaciones CSS desde JS
+###### clase 14
+
+
+<script>
+    const $cuadrado = document.getElementById('cuadrado');
+    // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra')
+    // $cuadrado.addEventListener('animationstart', (event) => {
+    // $cuadrado.addEventListener('animationiteration', (event) => {
+    $cuadrado.addEventListener('animationend', (event) => {
+      // console.log(event.animationName);
+      if (event.animationName === 'rebote') {
+        $cuadrado.style.animationName = 'cuadrado escalera';
+        $cuadrado.style.animationDuration = '3s';
+      }
+    });
+  </script>
