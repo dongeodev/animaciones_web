@@ -173,3 +173,27 @@ Es el api de JS para escribir las animaciones en JS
    <br> <code>   // endDelay: 5000,</code></br>
    <br> <code> })</code></br>
   <br> <code></script></code></br>
+
+ 
+## Controlar animaciones
+###### clase 18
+
+   <br> <code><br> <code> const $playButton = document.getElementById('play');</code></br>
+   <br> <code> const $pauseButton = document.getElementById('pause');</code></br>
+   <br> <code> const $stopButton = document.getElementById('stop');</code></br>
+   <br> <code> const $reverseButton = document.getElementById('reverse');</code></br>
+
+  <br> <code>  $playButton.addEventListener('click', (event) => {</code></br>
+ <br> <code>     animation.play();</code></br>
+   <br> <code> });</code></br>
+  <br> <code>  $pauseButton.addEventListener('click', (event) => {</code></br>
+  <br> <code>    animation.pause();</code></br>
+ <br> <code>   });</code></br>
+  <br> <code>  $stopButton.addEventListener('click', (event) => {</code></br>
+  <br> <code>    animation.cancel();</code></br>
+  <br> <code>  });</code></br>
+  <br> <code>  $reverseButton.addEventListener('click', (event) => {</code></br>
+  <br> <code>    animation.reverse();</code></br>
+ <br> <code>   });</code></br>
+ 
+ https://platzi.com/clases/1103-animaciones-web/6837-controlar-animaciones/
