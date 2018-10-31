@@ -152,15 +152,15 @@ Es el api de JS para escribir las animaciones en JS
 <br> <code> <script> </code></br>
  <br> <code>   const $pelota = document.getElementById('pelota');</code></br>
 
- <br> <code>   // element.animate(keyframes = [], option = {})</code></br>
+ <br>    // element.animate(keyframes = [], option = {})</br>
  <br> <code>   const animation = $pelota.animate([</code></br>
-  <br> <code>    // from</code></br>
+  <br>     // from</br>
   <br> <code>    {</code></br>
   <br> <code>      transform: 'translateX(0)'</code></br>
   <br> <code>    },</code></br>
- <br> <code>     // to</code></br>
+ <br>     // to</br>
  <br> <code>     {</code></br>
-  <br> <code>      transform: 'translateX(500px)' // 250</code></br>
+  <br> <code>      transform: 'translateX(500px)' </code>// 250</br>
    <br> <code>   }</code></br>
    <br> <code> ],{</code></br>
    <br> <code>   duration: 1000,</code></br>
