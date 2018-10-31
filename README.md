@@ -142,3 +142,34 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 ###### clase 16
  
  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+ 
+## element.animate
+###### clase 17
+
+Es el api de JS para escribir las animaciones en JS
+
+ <script>
+    const $pelota = document.getElementById('pelota');
+
+    // element.animate(keyframes = [], option = {})
+    const animation = $pelota.animate([
+      // from
+      {
+        transform: 'translateX(0)'
+      },
+      // to
+      {
+        transform: 'translateX(500px)' // 250
+      }
+    ],{
+      duration: 1000,
+      delay: 1000,
+      direction: 'normal',
+      easing: 'linear',
+      iterations: Infinity,
+      fill: 'forwards',
+      iterationStart: .5, // = 50%
+      // endDelay: 5000,
+    })
+  </script>
