@@ -117,7 +117,7 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 ## Detectar eventos de animaciones CSS desde JS
 ###### clase 14
 
-<br><code><script></br>
+<br><code><script></code></br>
    <br><code> const $cuadrado = document.getElementById('cuadrado');</code> </br>
    <br><code> // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra') </code></br>
    <br><code> // $cuadrado.addEventListener('animationstart', (event) => { </code></br>
