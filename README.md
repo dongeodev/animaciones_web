@@ -131,3 +131,8 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
    <br> <code>});</code> </br>
  <br> <code></script></code></br>
 
+## Optimizar render con will-change y developer tools
+###### clase 15
+
+ <br> <code>will-change: opacity, transform;</code></br>
+ will-change se usa para avisar al navegador que una propiedad va a cambiar. las transformaciones y la opacidad estan optimizadas en los navegadores por eso conviene usa will-change
