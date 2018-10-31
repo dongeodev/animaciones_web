@@ -117,17 +117,17 @@ Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar
 ## Detectar eventos de animaciones CSS desde JS
 ###### clase 14
 
-<br><script></br>
-   <br> const $cuadrado = document.getElementById('cuadrado'); </br>
-   <br> // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra') </br>
-   <br> // $cuadrado.addEventListener('animationstart', (event) => { </br>
-   <br> // $cuadrado.addEventListener('animationiteration', (event) => { </br>
-   <br> $cuadrado.addEventListener('animationend', (event) => { </br>
-    <br>  // console.log(event.animationName); </br>
-   <br>   if (event.animationName === 'rebote') { <b/r> 
-    <br>    $cuadrado.style.animationName = 'cuadrado escalera'; </br>
-    <br>    $cuadrado.style.animationDuration = '3s';</br> 
-    <br>  }</br>
-   <br> }); </br>
- <br> </script></br>
+<br><code><script></br>
+   <br><code> const $cuadrado = document.getElementById('cuadrado');</code> </br>
+   <br><code> // $cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra') </code></br>
+   <br><code> // $cuadrado.addEventListener('animationstart', (event) => { </code></br>
+   <br><code> // $cuadrado.addEventListener('animationiteration', (event) => { </code></br>
+   <br><code> $cuadrado.addEventListener('animationend', (event) => { </code></br>
+    <br><code>  // console.log(event.animationName); </code> </br>
+   <br> <code>  if (event.animationName === 'rebote') { </code></br> 
+    <br>  <code>  $cuadrado.style.animationName = 'cuadrado escalera'; </code></br>
+    <br> <code>   $cuadrado.style.animationDuration = '3s';</code></br> 
+    <br> <code> }</code></br>
+   <br> <code>});</code> </br>
+ <br> <code></script></code></br>
 
