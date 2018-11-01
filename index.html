@@ -12,6 +12,8 @@
         justify-content: center;
         background-color: #234050;
         height: 100vh;
+        font-family: sans-serif;
+        margin: 0;
     }
     .container {
       width: 100px;
@@ -53,14 +55,20 @@
      
     }
 
+    .load{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dot{
         width: 20px;
         height: 20px;
         border-radius: 50%;
         background-color: #97c93e;
-        position: relative;
-        top: 90px;
-        right: 50%;
+        /* position: relative; */
+        /* top: 90px;
+        right: 50%; */
         margin-right: 20px;
 
         animation-name: dot;
@@ -80,6 +88,66 @@
     .l3{
         animation-delay: 1s;
     }
+    .btn {
+      text-align: center;
+      padding: .6em .8em .8em;
+      border: none;
+      color: white;
+      background:#97c800;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: inset 0 -.2em rgba(0,0,0, .2);
+      outline: 0;
+      transition: .2s;
+      will-change: transform;
+    }
+    .btn:active {
+      transform: scale(.9);
+    }
+    .overlay{
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    .overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .modal{
+        background: white;
+        color: black;
+        text-align: center;
+        border-radius: .5em;
+        padding: 2em;
+        animation: modalIn .8s forwards;
+    }
+
+    @keyframes modalIn{
+        0%{
+            transform: translateY(-3000px);
+        }
+        60%{
+            transform: translateY(25px);
+        }
+        75%{
+            transform: translateY(-10px);
+        }
+        90%{
+            transform: translateY(5px);
+        }
+    }
+
     @keyframes dot{
         0%{
             opacity: 0;
@@ -122,11 +190,11 @@
             opacity: 0;
         }
         30%{
-            transform: scale(.8) rotate(405deg);
+            transform: scale(.7) rotate(405deg);
             opacity: 1;
         }
         80%{
-            transform: scale(.8) rotate(405deg);
+            transform: scale(.7) rotate(405deg);
             opacity: 1; 
         }
         100%{
@@ -140,12 +208,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="platzi_left"></div>
-        <div class="platzi_right"></div>
+    <div class="overlay active" id='overlay'>
+        <div class="modal">
+            <h1>Curso de animaciones Web</h1>
+            <p>Navega por algunas de las animaciones realizadas en este curso</p>
+            <button class="btn"id='btn'>Genial</button>
+        </div>
+        <div class="container">
+            <div class="platzi_left"></div>
+            <div class="platzi_right"></div>
+        </div>
+        <div class="load">
+            <div class="dot l1"></div>
+            <div class="dot l2"></div>
+            <div class="dot l3"></div>
+
+        </div>
     </div>
-    <div class="dot l1"></div>
-    <div class="dot l2"></div>
-    <div class="dot l3"></div>
 </body>
 </html>
