@@ -10,6 +10,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        flex-direction: column;
         background-color: #234050;
         height: 100vh;
         font-family: sans-serif;
@@ -237,6 +239,37 @@
             background-position: right;
         }
     }
+
+    .containernena{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: azure;
+        opacity: 1;
+        visibility: visible;
+        transition-duration: 1s;
+        animation: nena 2s infinite;
+    }
+    .containernena.is-true{
+        opacity: 0;
+        visibility: hidden;
+    }
+    @keyframes nena{
+        0%{
+            color: aquamarine;
+        }
+        20%{
+            color: aqua;
+        }
+        50%{
+            color: rgb(255, 0, 212);
+        }
+        70%{
+            color: #c8008c;
+        }
+    }
     
     </style>
 </head>
@@ -258,14 +291,18 @@
             </div>
         </div>
     </div>
+    <div class="like" id='like'></div>
+    <div class="containernena is-true" id = containernena>
+        <div class="nena"><h1>TE AMO NENA</h1></div>
 
-    <div class="like is-liked" id='like'></div>
+    </div>
 
     <script>
     const $overlay = document.getElementById('overlay');
     const $button = document.getElementById('btn');
     const $modal = document.getElementById('modal');
     const $like = document.getElementById('like');
+    const $containernena = document.getElementById('containernena');
 
     $button.addEventListener('click', (event)=>{
         // console.log(event);
@@ -277,8 +314,10 @@
         $overlay.classList.remove('active');
 
     });
+
     $like.addEventListener('click',(event)=>{
         $like.classList.toggle('is-liked');
+        $containernena.classList.toggle('is-true');
 
     });
 
