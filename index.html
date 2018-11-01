@@ -217,7 +217,26 @@
         }
     }
 
+    .like{
+        width: 100px;
+        height: 100px;
+        background-image: url(./corazon.png);
+        cursor: pointer;
 
+    }
+    .like.is-liked{
+        animation: liked 1s forwards;
+        animation-timing-function: steps(28);
+
+    }
+    @keyframes liked{
+        0%{
+            background-position: 0 0;
+        }
+        100%{
+            background-position: right;
+        }
+    }
     
     </style>
 </head>
@@ -240,10 +259,13 @@
         </div>
     </div>
 
+    <div class="like is-liked" id='like'></div>
+
     <script>
     const $overlay = document.getElementById('overlay');
     const $button = document.getElementById('btn');
     const $modal = document.getElementById('modal');
+    const $like = document.getElementById('like');
 
     $button.addEventListener('click', (event)=>{
         // console.log(event);
@@ -255,6 +277,12 @@
         $overlay.classList.remove('active');
 
     });
+    $like.addEventListener('click',(event)=>{
+        $like.classList.toggle('is-liked');
+
+    });
+
+
 
     </script>
 </body>
