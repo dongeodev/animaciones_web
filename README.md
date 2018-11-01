@@ -1,6 +1,6 @@
 # Animaciones web
 Apuntes del curso de animaciones para la web de Platzi
-
+https://geodu07.github.io/animaciones_web/
 ## Sintaxis de transiciones
 ###### clase 3
 
