@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Logo Platzi</title>
     <style>
     body{
-        display: flex;
+        /* display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        flex-direction: column;
-        background-color: #234050;
-        height: 100vh;
-        font-family: sans-serif;
+        flex-direction: column; */
+        background-color: #ffffff;
         margin: 0;
+        font-family: sans-serif;
     }
     .container {
       width: 100px;
@@ -121,6 +121,7 @@
         opacity: 0;
         visibility: hidden;
         transition: 1.1s ease-in;
+        z-index: 2;
 
     }
     .overlay.active{
@@ -251,6 +252,9 @@
         visibility: visible;
         transition-duration: 1s;
         animation: nena 2s infinite;
+        font-family: Arial;
+    
+        font-size: 2em;
     }
     .containernena.is-true{
         opacity: 0;
@@ -264,16 +268,165 @@
             color: aqua;
         }
         50%{
-            color: rgb(255, 0, 212);
+            color: rgb(61, 206, 250);
         }
         70%{
-            color: #c8008c;
+            color: #c7e9eb;
         }
     }
-    
+
+    .header{
+        width: 100%;
+        height: 52px;
+        background-color: gray;
+        display: flex;
+        
+
+    }
+    .btn2{
+        position: relative;
+        top: 0;
+        left: 20px;
+    }
+
+    .notificacion{
+        color: white;
+        position: relative;
+        left: 75px;
+        line-height: 52px;
+        width: 50px;
+        height: inherit;
+        display: flex;
+
+    }
+    .notificacion:before{
+        content: "\f0f3";
+        font-family: 'FontAwesome';
+        display: block;
+        transform-origin: center top;
+    }
+    .notificacion.move:before{
+        animation-name: move;
+        animation-duration: .5s;
+        animation-timing-function: ease-out;
+
+    }
+    @keyframes move{
+        0%{
+            transform: rotate(35deg);
+        }
+        15%{
+            transform: rotate(-30deg);
+        }
+        30%{
+            transform: rotate(25deg);
+        }
+        50%{
+            transform: rotate(-20deg);
+        }
+        65%{
+            transform: rotate(15deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }
+    .notificacion:after{
+        content: attr(data-count);
+        font-family: sans-serif;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        left: 0px;
+        background: #ff4600;
+        border-radius: 50px;
+        min-width: 14px;
+        height: 14px;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: .3s;
+        will-change: opacity, transform;
+    }
+
+    .notificacion.show:after{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .containerlike{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .containerwave {
+      height: 500px;
+      background: #0f9bf6;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .content {
+      font-family: Arial;
+      text-align: center;
+      font-size: 2em;
+      color: rgba(255,255,255, .8);
+    }
+
+    .waves {
+      position: absolute;
+      bottom: -135px;
+      height: 527px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .wave {
+      position: absolute;
+      left: -180px;
+      bottom: 0;    
+      width: 2402px;
+      height: 427px;
+      background: url(waves.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+    }
+    .wave.a {
+      background-position: 0 -854px;
+    }
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+    }
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: translate(0 , 0);
+      }
+      50% {
+        transform: translate(-80px, 30px);
+      }
+      100% {
+        transform: translate(160px, -60px);
+      }
+    }
+
     </style>
 </head>
 <body>
+    <header class="header">
+        <button class="btn btn2" id='btn2'>Enviar Notificaciones</button>
+        <div class="notificacion" id="notificacion"></div>
+    </header>
     <div class="overlay active" id='overlay'>
         <div class="modal" id='modal'>
             <h1>Curso de animaciones Web</h1>
@@ -291,18 +444,44 @@
             </div>
         </div>
     </div>
+
+<div class="containerlike">
+
     <div class="like" id='like'></div>
-    <div class="containernena is-true" id = 'containernena'>
-        <div class="nena"><h1>Hola Mundo</h1></div>
 
     </div>
+    <!-- <div class="containernena is-true" id = 'containernena'>
+        <div class="nena"><h1>Hola Mundo</h1></div>
+        <p>Estoy en el curso de animaciones para la web!</p>
 
+</div> -->
+
+<div class="containerwave">
+        <!-- <div class="content">
+          <h1>Hola mundo!</h1>
+          <p>Estoy en el curso de animaciones para la web!</p>
+        </div> -->
+        <div class="containernena is-true" id = 'containernena'>
+                <div class="nena"><h1>Hola Mundo</h1></div>
+                <p>Estoy en el curso de animaciones para la web!</p>
+        
+        </div>
+        <div class="waves">
+          <div class="wave circulo a"></div>
+          <div class="wave circulo b"></div>
+          <div class="wave circulo c"></div>
+        </div>
+
+</div>   
     <script>
     const $overlay = document.getElementById('overlay');
     const $button = document.getElementById('btn');
     const $modal = document.getElementById('modal');
     const $like = document.getElementById('like');
     const $containernena = document.getElementById('containernena');
+    const $bell = document.getElementById('notificacion');
+    const $button2 = document.getElementById('btn2');
+
 
     $button.addEventListener('click', (event)=>{
         // console.log(event);
@@ -321,7 +500,16 @@
 
     });
 
+    $button2.addEventListener('click', (event) => {
+        const count = Number($bell.getAttribute('data-count'))||0;
+        $bell.setAttribute('data-count', count + 1);
+        $bell.classList.add('show');
+        $bell.classList.add('move');
+    });
+    $bell.addEventListener('animationend', (event)=>{
 
+        $bell.classList.remove('move');
+    })
 
     </script>
 </body>
